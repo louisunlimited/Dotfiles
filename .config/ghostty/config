@@ -1,0 +1,18 @@
+# --- Typography ---
+font-family = "MonoLisa"
+font-size = 14
+
+# --- Theme and Colors ---
+theme = Catppuccin Mocha
+background = #051422
+
+# --- Window and Appearance ---
+background-opacity = 0.95
+
+
+# --- Keybinds ---
+keybind = cmd+shift+h=goto_split:left
+keybind = cmd+shift+l=goto_split:right
+keybind = cmd+shift+k=goto_split:up
+keybind = cmd+shift+j=goto_split:down
+keybind = shift+enter=text:\n
