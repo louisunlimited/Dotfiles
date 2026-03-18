@@ -25,6 +25,8 @@ return {
 		})
 
 		mason_lspconfig.setup({
+			-- automatically enable installed servers via vim.lsp.enable (nvim 0.11+)
+			automatic_enable = true,
 			-- list of servers for mason to install
 			ensure_installed = {
 				"ts_ls",
@@ -34,8 +36,7 @@ return {
 				"svelte",
 				"lua_ls",
 				"emmet_ls",
-				"texlab",
-				"rust_analyzer",
+		"rust_analyzer",
 			},
 		})
 
@@ -43,8 +44,7 @@ return {
 			ensure_installed = {
 				"prettier", -- prettier formatter
 				"stylua", -- lua formatter
-				"latexindent", -- latex formatter
-				"eslint_d", -- js linter
+		"eslint_d", -- js linter
 			},
 		})
 	end,

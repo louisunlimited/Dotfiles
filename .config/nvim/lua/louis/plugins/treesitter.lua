@@ -40,8 +40,7 @@ return {
 				"dockerfile",
 				"gitignore",
 				"c",
-				"latex",
-				"rust",
+		"rust",
 			},
 			incremental_selection = {
 				enable = true,
