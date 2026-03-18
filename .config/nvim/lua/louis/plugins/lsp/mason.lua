@@ -1,6 +1,7 @@
 return {
 	"williamboman/mason.nvim",
 	dependencies = {
+		"neovim/nvim-lspconfig",
 		"williamboman/mason-lspconfig.nvim",
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 	},
@@ -36,7 +37,7 @@ return {
 				"svelte",
 				"lua_ls",
 				"emmet_ls",
-		"rust_analyzer",
+			"rust_analyzer",
 			},
 		})
 
@@ -44,7 +45,7 @@ return {
 			ensure_installed = {
 				"prettier", -- prettier formatter
 				"stylua", -- lua formatter
-		"eslint_d", -- js linter
+				"eslint_d", -- js linter
 			},
 		})
 	end,
