@@ -21,4 +21,3 @@ opt.backspace = "indent,eol,start"
 opt.clipboard:append("unnamedplus")
 
 opt.swapfile = false
-

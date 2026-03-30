@@ -37,7 +37,7 @@ return {
 				"svelte",
 				"lua_ls",
 				"emmet_ls",
-			"rust_analyzer",
+				"rust_analyzer",
 			},
 		})
 
