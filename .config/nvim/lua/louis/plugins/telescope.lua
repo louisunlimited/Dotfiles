@@ -25,6 +25,21 @@ return {
 			pickers = {
 				find_files = {
 					hidden = true,
+					mappings = {
+						-- on <CR>, open the file then reveal it in nvim-tree without stealing focus
+						i = {
+							["<CR>"] = function(prompt_bufnr)
+								actions.select_default(prompt_bufnr)
+								require("nvim-tree.api").tree.find_file({ open = true, focus = false })
+							end,
+						},
+						n = {
+							["<CR>"] = function(prompt_bufnr)
+								actions.select_default(prompt_bufnr)
+								require("nvim-tree.api").tree.find_file({ open = true, focus = false })
+							end,
+						},
+					},
 				},
 			},
 		})
