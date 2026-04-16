@@ -21,3 +21,9 @@ opt.backspace = "indent,eol,start"
 opt.clipboard:append("unnamedplus")
 
 opt.swapfile = false
+
+opt.foldmethod = "expr"
+opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+opt.foldenable = false -- files open unfolded by default
+opt.foldtext = "" -- keep syntax highlighting on folded lines
+opt.foldcolumn = "1" -- show fold indicators in the gutter
